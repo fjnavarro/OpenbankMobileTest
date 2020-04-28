@@ -3,23 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83416A602458F31200CD52DF /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83416A5F2458F31200CD52DF /* HomeCollectionViewCell.swift */; };
+		839B4E702458BC1C005A5FBE /* ApiFactory+Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4E6F2458BC1C005A5FBE /* ApiFactory+Characters.swift */; };
+		839B4E722458BC53005A5FBE /* ApiFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4E712458BC53005A5FBE /* ApiFactoryProtocol.swift */; };
 		83AF6FD42458442F005AF5A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FD32458442F005AF5A8 /* AppDelegate.swift */; };
 		83AF6FDD24584431005AF5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AF6FDC24584431005AF5A8 /* Assets.xcassets */; };
 		83AF6FE024584431005AF5A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AF6FDE24584431005AF5A8 /* LaunchScreen.storyboard */; };
+		83AF6FFD2458544B005AF5A8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FF62458544B005AF5A8 /* HomePresenter.swift */; };
+		83AF6FFE2458544B005AF5A8 /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FF72458544B005AF5A8 /* HomeLocalDataManager.swift */; };
+		83AF6FFF2458544B005AF5A8 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FF82458544B005AF5A8 /* HomeProtocols.swift */; };
+		83AF70002458544B005AF5A8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FF92458544B005AF5A8 /* HomeInteractor.swift */; };
+		83AF70012458544B005AF5A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FFA2458544B005AF5A8 /* HomeView.swift */; };
+		83AF70022458544B005AF5A8 /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FFB2458544B005AF5A8 /* HomeRemoteDataManager.swift */; };
+		83AF70032458544B005AF5A8 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FFC2458544B005AF5A8 /* HomeWireFrame.swift */; };
+		83AF7005245854E7005AF5A8 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AF7004245854E7005AF5A8 /* HomeView.storyboard */; };
+		83AF700724585B82005AF5A8 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF700624585B82005AF5A8 /* CharactersResponse.swift */; };
+		83AF700924585D8F005AF5A8 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF700824585D8F005AF5A8 /* Character.swift */; };
+		83AF700F2458A584005AF5A8 /* ApiFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF700E2458A584005AF5A8 /* ApiFactory.swift */; };
 		CA5B3BE4695AD7D9EB7371D3 /* Pods_OpenbankMobileTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DA73C60E2DD5CA5C9467C6 /* Pods_OpenbankMobileTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14DA73C60E2DD5CA5C9467C6 /* Pods_OpenbankMobileTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenbankMobileTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83416A5F2458F31200CD52DF /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		839B4E6F2458BC1C005A5FBE /* ApiFactory+Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiFactory+Characters.swift"; sourceTree = "<group>"; };
+		839B4E712458BC53005A5FBE /* ApiFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFactoryProtocol.swift; sourceTree = "<group>"; };
 		83AF6FD02458442F005AF5A8 /* OpenbankMobileTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenbankMobileTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AF6FD32458442F005AF5A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83AF6FDC24584431005AF5A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83AF6FDF24584431005AF5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83AF6FE124584432005AF5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AF6FF62458544B005AF5A8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		83AF6FF72458544B005AF5A8 /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		83AF6FF82458544B005AF5A8 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		83AF6FF92458544B005AF5A8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		83AF6FFA2458544B005AF5A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		83AF6FFB2458544B005AF5A8 /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		83AF6FFC2458544B005AF5A8 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		83AF7004245854E7005AF5A8 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		83AF700624585B82005AF5A8 /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
+		83AF700824585D8F005AF5A8 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		83AF700E2458A584005AF5A8 /* ApiFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFactory.swift; sourceTree = "<group>"; };
 		89BAB2556983017B1C39E10A /* Pods-OpenbankMobileTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenbankMobileTest.debug.xcconfig"; path = "Target Support Files/Pods-OpenbankMobileTest/Pods-OpenbankMobileTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D18FC98EFCF7B6098FB48E84 /* Pods-OpenbankMobileTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenbankMobileTest.release.xcconfig"; path = "Target Support Files/Pods-OpenbankMobileTest/Pods-OpenbankMobileTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +97,46 @@
 				83AF6FDC24584431005AF5A8 /* Assets.xcassets */,
 				83AF6FDE24584431005AF5A8 /* LaunchScreen.storyboard */,
 				83AF6FE124584432005AF5A8 /* Info.plist */,
+				83AF6FF524585368005AF5A8 /* HomeView */,
+				83AF700D24588F6A005AF5A8 /* Networking */,
+				83AF700C24585EDA005AF5A8 /* Entities */,
 			);
 			path = OpenbankMobileTest;
+			sourceTree = "<group>";
+		};
+		83AF6FF524585368005AF5A8 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				83AF6FF62458544B005AF5A8 /* HomePresenter.swift */,
+				83AF6FF72458544B005AF5A8 /* HomeLocalDataManager.swift */,
+				83AF6FF82458544B005AF5A8 /* HomeProtocols.swift */,
+				83AF6FF92458544B005AF5A8 /* HomeInteractor.swift */,
+				83AF6FFA2458544B005AF5A8 /* HomeView.swift */,
+				83AF6FFB2458544B005AF5A8 /* HomeRemoteDataManager.swift */,
+				83AF6FFC2458544B005AF5A8 /* HomeWireFrame.swift */,
+				83AF7004245854E7005AF5A8 /* HomeView.storyboard */,
+				83416A5F2458F31200CD52DF /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		83AF700C24585EDA005AF5A8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				83AF700824585D8F005AF5A8 /* Character.swift */,
+				83AF700624585B82005AF5A8 /* CharactersResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		83AF700D24588F6A005AF5A8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				83AF700E2458A584005AF5A8 /* ApiFactory.swift */,
+				839B4E6F2458BC1C005A5FBE /* ApiFactory+Characters.swift */,
+				839B4E712458BC53005A5FBE /* ApiFactoryProtocol.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		95B3EFE78059889155C16F7A /* Pods */ = {
@@ -79,7 +145,6 @@
 				89BAB2556983017B1C39E10A /* Pods-OpenbankMobileTest.debug.xcconfig */,
 				D18FC98EFCF7B6098FB48E84 /* Pods-OpenbankMobileTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +159,7 @@
 				83AF6FCC2458442F005AF5A8 /* Sources */,
 				83AF6FCD2458442F005AF5A8 /* Frameworks */,
 				83AF6FCE2458442F005AF5A8 /* Resources */,
+				2A2EDE63836EEC48FB530637 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF7005245854E7005AF5A8 /* HomeView.storyboard in Resources */,
 				83AF6FE024584431005AF5A8 /* LaunchScreen.storyboard in Resources */,
 				83AF6FDD24584431005AF5A8 /* Assets.xcassets in Resources */,
 			);
@@ -150,6 +217,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A2EDE63836EEC48FB530637 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenbankMobileTest/Pods-OpenbankMobileTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenbankMobileTest/Pods-OpenbankMobileTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenbankMobileTest/Pods-OpenbankMobileTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E7A69DC179200E99A3FCAB76 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,7 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF6FFF2458544B005AF5A8 /* HomeProtocols.swift in Sources */,
+				839B4E702458BC1C005A5FBE /* ApiFactory+Characters.swift in Sources */,
+				83AF70032458544B005AF5A8 /* HomeWireFrame.swift in Sources */,
 				83AF6FD42458442F005AF5A8 /* AppDelegate.swift in Sources */,
+				83AF6FFD2458544B005AF5A8 /* HomePresenter.swift in Sources */,
+				83AF70012458544B005AF5A8 /* HomeView.swift in Sources */,
+				83AF70002458544B005AF5A8 /* HomeInteractor.swift in Sources */,
+				83416A602458F31200CD52DF /* HomeCollectionViewCell.swift in Sources */,
+				83AF70022458544B005AF5A8 /* HomeRemoteDataManager.swift in Sources */,
+				83AF700924585D8F005AF5A8 /* Character.swift in Sources */,
+				83AF700F2458A584005AF5A8 /* ApiFactory.swift in Sources */,
+				83AF700724585B82005AF5A8 /* CharactersResponse.swift in Sources */,
+				83AF6FFE2458544B005AF5A8 /* HomeLocalDataManager.swift in Sources */,
+				839B4E722458BC53005A5FBE /* ApiFactoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atalayasoft.OpenbankMobileTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -345,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atalayasoft.OpenbankMobileTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
