@@ -19,8 +19,7 @@ extension ApiFactory {
         request.validate(statusCode: 200..<300)
             .responseDecodable(of: CharactersResponse.self) { (response) in
                 guard let charactersResponse = response.value else {
-                    print("Error 1 \(String(describing: response.error))")
-                    
+                    // Error
                     failure("\(String(describing: response.error))")
                     return
                 }
@@ -38,8 +37,7 @@ extension ApiFactory {
         request.validate(statusCode: 200..<300)
             .responseDecodable(of: CharactersResponse.self) { (response) in
                 guard let characterResponse = response.value else {
-                    print("Error 1 \(String(describing: response.error))")
-                    
+                    // Error
                     failure("\(String(describing: response.error))")
                     return
                 }

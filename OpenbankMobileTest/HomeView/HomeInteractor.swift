@@ -25,4 +25,8 @@ extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
     func callBackGetCharacters(with characters: [Character]) {
         presenter?.callBackGetCharacters(with: characters)
     }
+    
+    func callBackGetCharacters(withError error: String?) {
+        presenter?.callBackGetCharacters(withError: error)
+    }
 }

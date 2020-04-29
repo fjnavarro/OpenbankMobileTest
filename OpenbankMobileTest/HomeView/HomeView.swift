@@ -47,6 +47,27 @@ extension HomeView: HomeViewProtocol {
             self.activityIndicatorView.stopAnimating()
         }
     }
+    
+    func showError(_ error: String?) {
+        let alertController = UIAlertController(title: "Ups.",
+                                                message: "An error has occurred",
+                                                preferredStyle: .alert)
+        
+        let acceptAction = UIAlertAction(title: "Try again later",
+                                         style: .default,
+                                         handler: { (alert) in
+                                            self.presenter?.viewDidLoad()
+                                         })
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .default,
+                                         handler: nil)
+        
+        alertController.addAction(acceptAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 extension HomeView: UICollectionViewDataSource {

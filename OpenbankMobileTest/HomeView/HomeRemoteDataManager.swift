@@ -38,7 +38,7 @@ class HomeRemoteDataManager:HomeRemoteDataManagerInputProtocol {
             
             self.remoteRequestHandler?.callBackGetCharacters(with: characters)
         }) { (Error) in
-            print("")
+            self.remoteRequestHandler?.callBackGetCharacters(withError: Error)
         }
 //        }
     }

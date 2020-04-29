@@ -16,6 +16,7 @@ protocol HomeViewProtocol: class {
     func updateCharacters(_ characters: [Character])
     func loadActivity()
     func stopActivity()
+    func showError(_ error: String?)
 }
 
 protocol HomeWireFrameProtocol: class {
@@ -38,6 +39,7 @@ protocol HomePresenterProtocol: class {
 protocol HomeInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
     func callBackGetCharacters(with characters: [Character])
+    func callBackGetCharacters(withError error: String?)
 }
 
 protocol HomeInteractorInputProtocol: class {
@@ -62,6 +64,7 @@ protocol HomeRemoteDataManagerInputProtocol: class {
 protocol HomeRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
     func callBackGetCharacters(with characters: [Character])
+    func callBackGetCharacters(withError error: String?)
 }
 
 protocol HomeLocalDataManagerInputProtocol: class {

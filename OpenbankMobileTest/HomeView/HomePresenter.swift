@@ -40,4 +40,10 @@ extension HomePresenter: HomeInteractorOutputProtocol {
         
         view?.updateCharacters(characters)
     }
+    
+    func callBackGetCharacters(withError error: String?) {
+        view?.stopActivity()
+        
+        view?.showError(error)
+    }
 }
