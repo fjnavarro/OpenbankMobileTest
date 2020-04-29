@@ -10,7 +10,8 @@ import Foundation
 import CryptoSwift
 
 class ApiFactory: ApiFactoryProtocol {
-    let KMarvelFactory_CharactersEndpoint = "/public/characters"
+    let KApiFactory_CharactersEndpoint = "/public/characters"
+    let KApiFactory_CharacterEndpoint = "/public/characters/"
     let publicKey = "ba0bd26c9846c8515c8954202fa5ae75"
     let privateKey = "de795b1f5cc85d4132b50b09249ec347372a7b55"
     let baseUrl = "http://gateway.marvel.com/v1"

@@ -69,3 +69,11 @@ extension HomeView: UICollectionViewDataSource {
         return cell
     }
 }
+
+extension HomeView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = characters[indexPath.row]
+        
+        presenter?.showDetail(character)
+    }
+}

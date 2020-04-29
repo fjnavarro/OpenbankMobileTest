@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		83416A602458F31200CD52DF /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83416A5F2458F31200CD52DF /* HomeCollectionViewCell.swift */; };
+		836C130324595E7F00C2E66D /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C12FC24595E7F00C2E66D /* DetailPresenter.swift */; };
+		836C130424595E7F00C2E66D /* DetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C12FD24595E7F00C2E66D /* DetailLocalDataManager.swift */; };
+		836C130524595E7F00C2E66D /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C12FE24595E7F00C2E66D /* DetailProtocols.swift */; };
+		836C130624595E7F00C2E66D /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C12FF24595E7F00C2E66D /* DetailInteractor.swift */; };
+		836C130724595E7F00C2E66D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C130024595E7F00C2E66D /* DetailView.swift */; };
+		836C130824595E7F00C2E66D /* DetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C130124595E7F00C2E66D /* DetailRemoteDataManager.swift */; };
+		836C130924595E7F00C2E66D /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C130224595E7F00C2E66D /* DetailWireFrame.swift */; };
+		836C130B245968F400C2E66D /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836C130A245968F400C2E66D /* DetailView.storyboard */; };
 		839B4E702458BC1C005A5FBE /* ApiFactory+Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4E6F2458BC1C005A5FBE /* ApiFactory+Characters.swift */; };
 		839B4E722458BC53005A5FBE /* ApiFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B4E712458BC53005A5FBE /* ApiFactoryProtocol.swift */; };
 		83AF6FD42458442F005AF5A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6FD32458442F005AF5A8 /* AppDelegate.swift */; };
@@ -30,6 +38,14 @@
 /* Begin PBXFileReference section */
 		14DA73C60E2DD5CA5C9467C6 /* Pods_OpenbankMobileTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenbankMobileTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83416A5F2458F31200CD52DF /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		836C12FC24595E7F00C2E66D /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		836C12FD24595E7F00C2E66D /* DetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalDataManager.swift; sourceTree = "<group>"; };
+		836C12FE24595E7F00C2E66D /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		836C12FF24595E7F00C2E66D /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		836C130024595E7F00C2E66D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		836C130124595E7F00C2E66D /* DetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		836C130224595E7F00C2E66D /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
+		836C130A245968F400C2E66D /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		839B4E6F2458BC1C005A5FBE /* ApiFactory+Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiFactory+Characters.swift"; sourceTree = "<group>"; };
 		839B4E712458BC53005A5FBE /* ApiFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFactoryProtocol.swift; sourceTree = "<group>"; };
 		83AF6FD02458442F005AF5A8 /* OpenbankMobileTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenbankMobileTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +88,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		836C12FB24595E5F00C2E66D /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				836C12FC24595E7F00C2E66D /* DetailPresenter.swift */,
+				836C12FD24595E7F00C2E66D /* DetailLocalDataManager.swift */,
+				836C12FE24595E7F00C2E66D /* DetailProtocols.swift */,
+				836C12FF24595E7F00C2E66D /* DetailInteractor.swift */,
+				836C130024595E7F00C2E66D /* DetailView.swift */,
+				836C130124595E7F00C2E66D /* DetailRemoteDataManager.swift */,
+				836C130224595E7F00C2E66D /* DetailWireFrame.swift */,
+				836C130A245968F400C2E66D /* DetailView.storyboard */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		83AF6FC72458442F005AF5A8 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +129,7 @@
 				83AF6FDE24584431005AF5A8 /* LaunchScreen.storyboard */,
 				83AF6FE124584432005AF5A8 /* Info.plist */,
 				83AF6FF524585368005AF5A8 /* HomeView */,
+				836C12FB24595E5F00C2E66D /* DetailView */,
 				83AF700D24588F6A005AF5A8 /* Networking */,
 				83AF700C24585EDA005AF5A8 /* Entities */,
 			);
@@ -210,6 +242,7 @@
 			files = (
 				83AF7005245854E7005AF5A8 /* HomeView.storyboard in Resources */,
 				83AF6FE024584431005AF5A8 /* LaunchScreen.storyboard in Resources */,
+				836C130B245968F400C2E66D /* DetailView.storyboard in Resources */,
 				83AF6FDD24584431005AF5A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,15 +299,22 @@
 				83AF6FFF2458544B005AF5A8 /* HomeProtocols.swift in Sources */,
 				839B4E702458BC1C005A5FBE /* ApiFactory+Characters.swift in Sources */,
 				83AF70032458544B005AF5A8 /* HomeWireFrame.swift in Sources */,
+				836C130624595E7F00C2E66D /* DetailInteractor.swift in Sources */,
 				83AF6FD42458442F005AF5A8 /* AppDelegate.swift in Sources */,
 				83AF6FFD2458544B005AF5A8 /* HomePresenter.swift in Sources */,
 				83AF70012458544B005AF5A8 /* HomeView.swift in Sources */,
 				83AF70002458544B005AF5A8 /* HomeInteractor.swift in Sources */,
+				836C130824595E7F00C2E66D /* DetailRemoteDataManager.swift in Sources */,
+				836C130924595E7F00C2E66D /* DetailWireFrame.swift in Sources */,
 				83416A602458F31200CD52DF /* HomeCollectionViewCell.swift in Sources */,
+				836C130524595E7F00C2E66D /* DetailProtocols.swift in Sources */,
+				836C130324595E7F00C2E66D /* DetailPresenter.swift in Sources */,
 				83AF70022458544B005AF5A8 /* HomeRemoteDataManager.swift in Sources */,
+				836C130424595E7F00C2E66D /* DetailLocalDataManager.swift in Sources */,
 				83AF700924585D8F005AF5A8 /* Character.swift in Sources */,
 				83AF700F2458A584005AF5A8 /* ApiFactory.swift in Sources */,
 				83AF700724585B82005AF5A8 /* CharactersResponse.swift in Sources */,
+				836C130724595E7F00C2E66D /* DetailView.swift in Sources */,
 				83AF6FFE2458544B005AF5A8 /* HomeLocalDataManager.swift in Sources */,
 				839B4E722458BC53005A5FBE /* ApiFactoryProtocol.swift in Sources */,
 			);

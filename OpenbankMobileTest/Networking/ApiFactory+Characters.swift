@@ -11,7 +11,7 @@ import Alamofire
 
 extension ApiFactory {
     func characters(completionHandler: @escaping(_ characters:CharactersResponse)->Void, failure: @escaping(_ error: String?)->Void) { // Mirar el error para que sea personalizado
-        let urlString = "\(baseUrl)\(KMarvelFactory_CharactersEndpoint)?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
+        let urlString = "\(baseUrl)\(KApiFactory_CharactersEndpoint)?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
         
         let request = AF.request(urlString,
                                  method: .get)
@@ -26,6 +26,25 @@ extension ApiFactory {
                 }
                 
                 completionHandler(charactersResponse)
+        }
+    }
+    
+    func character(completionHandler:@escaping (_ character:CharactersResponse)->Void, failure:@escaping (_ error: String?)->Void, id: Int) {
+        let urlString = "\(baseUrl)\(KApiFactory_CharacterEndpoint)\(id)?ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
+        
+        let request = AF.request(urlString,
+                                 method: .get)
+        
+        request.validate(statusCode: 200..<300)
+            .responseDecodable(of: CharactersResponse.self) { (response) in
+                guard let characterResponse = response.value else {
+                    print("Error 1 \(String(describing: response.error))")
+                    
+                    failure("\(String(describing: response.error))")
+                    return
+                }
+                
+                completionHandler(characterResponse)
         }
     }
 }

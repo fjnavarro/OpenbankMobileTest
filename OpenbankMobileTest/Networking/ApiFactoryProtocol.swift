@@ -10,4 +10,5 @@ import Foundation
 
 protocol ApiFactoryProtocol {
     func characters(completionHandler:@escaping (_ characters:CharactersResponse)->Void, failure:@escaping (_ error: String?)->Void)
+    func character(completionHandler:@escaping (_ character:CharactersResponse)->Void, failure:@escaping (_ error: String?)->Void, id: Int)
 }

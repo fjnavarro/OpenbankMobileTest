@@ -21,6 +21,8 @@ protocol HomeViewProtocol: class {
 protocol HomeWireFrameProtocol: class {
     // PRESENTER -> WIREFRAME
     static func createHomeModule() -> UIViewController
+    
+    func showDetail(_ character: Character, from view: HomeViewProtocol)
 }
 
 protocol HomePresenterProtocol: class {
@@ -30,6 +32,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func showDetail(_ character: Character)
 }
 
 protocol HomeInteractorOutputProtocol: class {

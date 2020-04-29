@@ -24,8 +24,14 @@ struct DataClass: Codable {
 // MARK: - Result
 struct Result: Codable {
     let id: Int?
-    let name: String?
+    let name, resultDescription: String?
     let thumbnail: Thumbnail?
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name
+        case resultDescription = "description"
+        case thumbnail
+    }
 }
 
 // MARK: - Thumbnail

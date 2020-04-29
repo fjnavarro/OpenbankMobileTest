@@ -20,7 +20,16 @@ class HomePresenter  {
 extension HomePresenter: HomePresenterProtocol {
     // presenter methods
     func viewDidLoad() {
+        view?.loadActivity()
+        
         interactor?.getCharacters()
+    }
+    
+    func showDetail(_ character: Character) {
+        if let view = view {
+            wireFrame?.showDetail(character,
+                                  from: view)
+        }
     }
 }
 
