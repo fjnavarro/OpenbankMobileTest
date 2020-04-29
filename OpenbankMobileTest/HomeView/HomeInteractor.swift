@@ -22,7 +22,7 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
 extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
     // use case methods
-    func callBackGetCharacters(with characters: [Character]) {
+    func callBackGetCharacters(with characters: [CharacterM]) {
         presenter?.callBackGetCharacters(with: characters)
     }
     

@@ -11,7 +11,7 @@ import UIKit
 
 class DetailWireFrame: DetailWireFrameProtocol {
 
-    class func createDetailModule(_ character: Character) -> UIViewController {
+    class func createDetailModule(_ character: CharacterM) -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "DetailView")
         if let view = navController.children.first as? DetailView {
             let presenter: DetailPresenterProtocol & DetailInteractorOutputProtocol = DetailPresenter()

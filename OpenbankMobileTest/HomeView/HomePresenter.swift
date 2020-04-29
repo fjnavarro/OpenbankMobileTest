@@ -25,7 +25,7 @@ extension HomePresenter: HomePresenterProtocol {
         interactor?.getCharacters()
     }
     
-    func showDetail(_ character: Character) {
+    func showDetail(_ character: CharacterM) {
         if let view = view {
             wireFrame?.showDetail(character,
                                   from: view)
@@ -35,7 +35,7 @@ extension HomePresenter: HomePresenterProtocol {
 
 extension HomePresenter: HomeInteractorOutputProtocol {
     // interactor output methods
-    func callBackGetCharacters(with characters: [Character]) {
+    func callBackGetCharacters(with characters: [CharacterM]) {
         view?.stopActivity()
         
         view?.updateCharacters(characters)

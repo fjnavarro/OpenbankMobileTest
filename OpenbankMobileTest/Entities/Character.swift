@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Character  {
+struct CharacterM  {
     let id: Int
     let name: String
     let thumbnail: String

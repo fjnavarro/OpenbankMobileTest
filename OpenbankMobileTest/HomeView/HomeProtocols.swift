@@ -13,7 +13,7 @@ protocol HomeViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
     
-    func updateCharacters(_ characters: [Character])
+    func updateCharacters(_ characters: [CharacterM])
     func loadActivity()
     func stopActivity()
     func showError(_ error: String?)
@@ -23,7 +23,7 @@ protocol HomeWireFrameProtocol: class {
     // PRESENTER -> WIREFRAME
     static func createHomeModule() -> UIViewController
     
-    func showDetail(_ character: Character, from view: HomeViewProtocol)
+    func showDetail(_ character: CharacterM, from view: HomeViewProtocol)
 }
 
 protocol HomePresenterProtocol: class {
@@ -33,12 +33,12 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
-    func showDetail(_ character: Character)
+    func showDetail(_ character: CharacterM)
 }
 
 protocol HomeInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
-    func callBackGetCharacters(with characters: [Character])
+    func callBackGetCharacters(with characters: [CharacterM])
     func callBackGetCharacters(withError error: String?)
 }
 
@@ -63,7 +63,7 @@ protocol HomeRemoteDataManagerInputProtocol: class {
 
 protocol HomeRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func callBackGetCharacters(with characters: [Character])
+    func callBackGetCharacters(with characters: [CharacterM])
     func callBackGetCharacters(withError error: String?)
 }
 

@@ -22,7 +22,7 @@ class DetailInteractor: DetailInteractorInputProtocol {
 
 extension DetailInteractor: DetailRemoteDataManagerOutputProtocol {
     // use case methods
-    func callBackGetCharacter(with character: Character) {
+    func callBackGetCharacter(with character: CharacterM) {
         presenter?.callBackGetCharacter(with: character)
     }
 }

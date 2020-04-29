@@ -17,7 +17,7 @@ class HomeView: UIViewController {
     
     // MARK: Properties
     var presenter: HomePresenterProtocol?
-    var characters = [Character]()
+    var characters = [CharacterM]()
 
     // MARK: Lifecycle
 
@@ -31,7 +31,7 @@ class HomeView: UIViewController {
 extension HomeView: HomeViewProtocol {
     // view output methods
     
-    func updateCharacters(_ characters: [Character]) {
+    func updateCharacters(_ characters: [CharacterM]) {
         self.characters = characters
         listCollectionView.reloadData()
     }

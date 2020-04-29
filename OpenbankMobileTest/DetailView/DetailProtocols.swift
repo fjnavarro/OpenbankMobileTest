@@ -13,14 +13,14 @@ protocol DetailViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: DetailPresenterProtocol? { get set }
     
-    func showDetailCharacter(_ character: Character)
+    func showDetailCharacter(_ character: CharacterM)
     func loadActivity()
     func stopActivity()
 }
 
 protocol DetailWireFrameProtocol: class {
     // PRESENTER -> WIREFRAME
-    static func createDetailModule(_ character: Character) -> UIViewController
+    static func createDetailModule(_ character: CharacterM) -> UIViewController
 }
 
 protocol DetailPresenterProtocol: class {
@@ -29,14 +29,14 @@ protocol DetailPresenterProtocol: class {
     var interactor: DetailInteractorInputProtocol? { get set }
     var wireFrame: DetailWireFrameProtocol? { get set }
     
-    var character: Character? { get set }
+    var character: CharacterM? { get set }
     
     func viewDidLoad()
 }
 
 protocol DetailInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
-    func callBackGetCharacter(with character: Character)
+    func callBackGetCharacter(with character: CharacterM)
 }
 
 protocol DetailInteractorInputProtocol: class {
@@ -60,7 +60,7 @@ protocol DetailRemoteDataManagerInputProtocol: class {
 
 protocol DetailRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func callBackGetCharacter(with character: Character)
+    func callBackGetCharacter(with character: CharacterM)
 }
 
 protocol DetailLocalDataManagerInputProtocol: class {

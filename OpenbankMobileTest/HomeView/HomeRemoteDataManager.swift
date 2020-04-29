@@ -17,7 +17,7 @@ class HomeRemoteDataManager:HomeRemoteDataManagerInputProtocol {
         ApiFactory().characters(completionHandler: { (charactersResponse) in
             print("")
             
-            var characters = [Character]()
+            var characters = [CharacterM]()
             
             guard let data = charactersResponse.data,
                 let results = data.results else {
@@ -30,7 +30,7 @@ class HomeRemoteDataManager:HomeRemoteDataManagerInputProtocol {
                     let thumbnail = item.thumbnail,
                     let thumbnailPath = thumbnail.path,
                     let thumbnailExtension = thumbnail.thumbnailExtension {
-                    characters.append(Character(id: id,
+                    characters.append(CharacterM(id: id,
                                                 name: name,
                                                 thumbnail: "\(thumbnailPath).\(thumbnailExtension)"))
                 }

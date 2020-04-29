@@ -14,7 +14,7 @@ class DetailPresenter  {
     weak var view: DetailViewProtocol?
     var interactor: DetailInteractorInputProtocol?
     var wireFrame: DetailWireFrameProtocol?
-    var character: Character?
+    var character: CharacterM?
     
 }
 
@@ -31,7 +31,7 @@ extension DetailPresenter: DetailPresenterProtocol {
 
 extension DetailPresenter: DetailInteractorOutputProtocol {
     // interactor output methods
-    func callBackGetCharacter(with character: Character) {
+    func callBackGetCharacter(with character: CharacterM) {
         view?.stopActivity()
         
         view?.showDetailCharacter(character)

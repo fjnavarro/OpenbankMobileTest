@@ -29,7 +29,7 @@ class DetailRemoteDataManager:DetailRemoteDataManagerInputProtocol {
                     let thumbnailPath = thumbnail.path,
                     let thumbnailExtension = thumbnail.thumbnailExtension,
                     let description =  item.resultDescription {
-                    self.remoteRequestHandler?.callBackGetCharacter(with: Character(id: id,
+                    self.remoteRequestHandler?.callBackGetCharacter(with: CharacterM(id: id,
                                                                                     name: name,
                                                                                     thumbnail: "\(thumbnailPath).\(thumbnailExtension)", description: description))
                 }

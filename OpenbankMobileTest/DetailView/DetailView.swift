@@ -33,7 +33,7 @@ class DetailView: UIViewController {
 
 extension DetailView: DetailViewProtocol {
     // view output methods
-    func showDetailCharacter(_ character: Character) {
+    func showDetailCharacter(_ character: CharacterM) {
         imageView.sd_setImage(with: URL(string: character.thumbnail),
                               completed: nil)
         
